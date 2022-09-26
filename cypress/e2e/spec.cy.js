@@ -67,9 +67,8 @@ describe('testing "/random"', () => {
     cy.get('#buttonTop').click();
     cy.url().should('equal','http://localhost:3000/top');
   })
-
-  //ver se tem como verificar que uma recommendation foi exibida
 })
 
 //ver se tem como verificar o efeito de mouseHover sob cada recommendation
 //ver se tem como verificar o video sendo reproduzido e pausado apos clicks
+// explore later the possibility of check the upvote and downvote
