@@ -13,8 +13,13 @@
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
 //
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
+Cypress.Commands.add("resetDatabase", () => {
+	cy.request("POST", "http://localhost:5000/reset");
+});
+
+Cypress.Commands.add("seedDatabase", () => {
+	cy.request("POST", "http://localhost:5000/seed");
+});
 //
 //
 // -- This is a dual command --
